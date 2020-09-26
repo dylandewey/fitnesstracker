@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://root:password!@fitnesstracker.9clmu.mongodb.net/workouts?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/webpackplugint", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
